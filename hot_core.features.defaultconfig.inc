@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * panopoly_core.features.defaultconfig.inc
+ * hot_core.features.defaultconfig.inc
  */
 
 /**
  * Implements hook_defaultconfig_features().
  */
-function panopoly_core_defaultconfig_features() {
+function hot_core_defaultconfig_features() {
   return array(
-    'panopoly_core' => array(
+    'hot_core' => array(
       'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
       'user_default_roles' => 'user_default_roles',
@@ -20,7 +20,7 @@ function panopoly_core_defaultconfig_features() {
 /**
  * Implements hook_defaultconfig_strongarm().
  */
-function panopoly_core_defaultconfig_strongarm() {
+function hot_core_defaultconfig_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
@@ -54,16 +54,16 @@ function panopoly_core_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_format_panopoly_day';
+  $strongarm->name = 'date_format_hotsauce_day';
   $strongarm->value = 'F j, Y';
-  $export['date_format_panopoly_day'] = $strongarm;
+  $export['date_format_hotsauce_day'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_format_panopoly_time';
+  $strongarm->name = 'date_format_hotsauce_time';
   $strongarm->value = 'g:ia';
-  $export['date_format_panopoly_time'] = $strongarm;
+  $export['date_format_hotsauce_time'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -75,7 +75,7 @@ function panopoly_core_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_taxonomy_term__panopoly_categories';
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__hotsauce_categories';
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
@@ -107,12 +107,12 @@ function panopoly_core_defaultconfig_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_taxonomy_term__panopoly_categories'] = $strongarm;
+  $export['field_bundle_settings_taxonomy_term__hotsauce_categories'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_taxonomy_term_panopoly_categories';
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_hotsauce_categories';
   $strongarm->value = array(
     'status' => 1,
     'view modes' => array(
@@ -133,7 +133,7 @@ function panopoly_core_defaultconfig_strongarm() {
       ),
     ),
   );
-  $export['panelizer_defaults_taxonomy_term_panopoly_categories'] = $strongarm;
+  $export['panelizer_defaults_taxonomy_term_hotsauce_categories'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -199,8 +199,8 @@ function panopoly_core_defaultconfig_strongarm() {
     'content-content' => 0,
     'menus-menus' => 0,
     'pages-pages' => 0,
-    'panopoly_apps_apps-panopoly_apps_apps' => 0,
-    'panopoly_foundation_apps-panopoly_foundation_apps' => 0,
+    'hotsauce_apps_apps-hotsauce_apps_apps' => 0,
+    'hotsauce_foundation_apps-hotsauce_foundation_apps' => 0,
     'taxonomy-taxonomy' => 0,
     'theme-theme' => 0,
     'users-users' => 0,
@@ -339,8 +339,8 @@ function panopoly_core_defaultconfig_strongarm() {
     'token-date:custom' => 0,
     'token-date:since' => 0,
     'token-date:raw' => 0,
-    'token-date:panopoly_time' => 0,
-    'token-date:panopoly_day' => 0,
+    'token-date:hotsauce_time' => 0,
+    'token-date:hotsauce_day' => 0,
     'token-view:name' => 0,
     'token-view:description' => 0,
     'token-view:machine-name' => 0,
@@ -394,8 +394,8 @@ function panopoly_core_defaultconfig_strongarm() {
     'entity_field_extra-taxonomy_term:description' => 0,
     'entity_field_extra-user:summary' => 'entity_field_extra-user:summary',
     'custom-custom' => 0,
-    'block-apps-manage_apps__panopoly' => 0,
-    'block-apps-manage_apps__panopoly_apps' => 0,
+    'block-apps-manage_apps__hotsauce' => 0,
+    'block-apps-manage_apps__hotsauce_apps' => 0,
     'block-facetapi-1Cpx6naJU4Y3YvKVc0vcLK7Yo0ahaN0l' => 0,
     'block-facetapi-fA1pg0Ubd1zgx1mvzHkFUGaNoMb4Gs0s' => 0,
     'block-menu-devel' => 0,
@@ -441,17 +441,17 @@ function panopoly_core_defaultconfig_strongarm() {
     'menu_tree-management' => 0,
     'menu_tree-navigation' => 0,
     'menu_tree-user-menu' => 0,
-    'views_panes-panopoly_demo-demo_listing' => 'views_panes-panopoly_demo-demo_listing',
-    'views_panes-panopoly_demo-individual_demo_item' => 'views_panes-panopoly_demo-individual_demo_item',
-    'views_panes-panopoly_demo-list_featured_demo_items' => 'views_panes-panopoly_demo-list_featured_demo_items',
-    'views_panes-panopoly_database_search-search_database_results' => 'views_panes-panopoly_database_search-search_database_results',
-    'views_panes-panopoly_search-search_solr_results' => 'views_panes-panopoly_search-search_solr_results',
-    'views_panes-panopoly_widgets_general_content-list_of_content' => 'views_panes-panopoly_widgets_general_content-list_of_content',
-    'views_panes-panopoly_widgets_general_content-piece_of_content' => 'views_panes-panopoly_widgets_general_content-piece_of_content',
-    'views_panes-panopoly_admin_content-admin_content' => 0,
-    'views_panes-panopoly_admin_media-admin_media' => 0,
-    'views_panes-panopoly_admin_users-admin_users' => 0,
-    'views_panes-panopoly_taxonomy-taxonomy_content' => 0,
+    'views_panes-hotsauce_demo-demo_listing' => 'views_panes-hotsauce_demo-demo_listing',
+    'views_panes-hotsauce_demo-individual_demo_item' => 'views_panes-hotsauce_demo-individual_demo_item',
+    'views_panes-hotsauce_demo-list_featured_demo_items' => 'views_panes-hotsauce_demo-list_featured_demo_items',
+    'views_panes-hotsauce_database_search-search_database_results' => 'views_panes-hotsauce_database_search-search_database_results',
+    'views_panes-hotsauce_search-search_solr_results' => 'views_panes-hotsauce_search-search_solr_results',
+    'views_panes-hotsauce_widgets_general_content-list_of_content' => 'views_panes-hotsauce_widgets_general_content-list_of_content',
+    'views_panes-hotsauce_widgets_general_content-piece_of_content' => 'views_panes-hotsauce_widgets_general_content-piece_of_content',
+    'views_panes-hotsauce_admin_content-admin_content' => 0,
+    'views_panes-hotsauce_admin_media-admin_media' => 0,
+    'views_panes-hotsauce_admin_users-admin_users' => 0,
+    'views_panes-hotsauce_taxonomy-taxonomy_content' => 0,
     'block-shortcut-shortcuts' => 0,
   );
   $export['panels_page_allowed_types'] = $strongarm;
@@ -478,9 +478,9 @@ function panopoly_core_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_panopoly_categories_pattern';
+  $strongarm->name = 'pathauto_taxonomy_term_hotsauce_categories_pattern';
   $strongarm->value = 'categories/[term:name]';
-  $export['pathauto_taxonomy_term_panopoly_categories_pattern'] = $strongarm;
+  $export['pathauto_taxonomy_term_hotsauce_categories_pattern'] = $strongarm;
 
   return $export;
 }
@@ -488,7 +488,7 @@ function panopoly_core_defaultconfig_strongarm() {
 /**
  * Implements hook_defaultconfig_user_default_permissions().
  */
-function panopoly_core_defaultconfig_user_default_permissions() {
+function hot_core_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer panels styles'.
@@ -537,7 +537,7 @@ function panopoly_core_defaultconfig_user_default_permissions() {
 /**
  * Implements hook_defaultconfig_user_default_roles().
  */
-function panopoly_core_defaultconfig_user_default_roles() {
+function hot_core_defaultconfig_user_default_roles() {
   $roles = array();
 
   // Exported role: administrator.

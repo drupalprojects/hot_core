@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * panopoly_core.features.field_instance.inc
+ * hot_core.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function panopoly_core_field_default_field_instances() {
+function hot_core_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-panopoly_categories-field_featured_image'
-  $field_instances['taxonomy_term-panopoly_categories-field_featured_image'] = array(
-    'bundle' => 'panopoly_categories',
+  // Exported field_instance: 'taxonomy_term-hotsauce_categories-field_featured_image'
+  $field_instances['taxonomy_term-hotsauce_categories-field_featured_image'] = array(
+    'bundle' => 'hotsauce_categories',
     'deleted' => 0,
     'description' => 'This is the primary image to be associated with the taxonomy term',
     'display' => array(
@@ -21,7 +21,7 @@ function panopoly_core_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'hotsauce_image_quarter',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -52,7 +52,7 @@ function panopoly_core_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'panopoly_image_thumbnail',
+        'preview_image_style' => 'hotsauce_image_thumbnail',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',

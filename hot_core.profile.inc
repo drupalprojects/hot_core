@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * panopoly_core.profile.inc
+ * hot_core.profile.inc
  */
 
 /**
  * Task handler to set the language to English since that is the only one
  * we have at the moment.
  */
-function panopoly_core_install_locale_selection(&$install_state) {
+function hot_core_install_locale_selection(&$install_state) {
   $install_state['parameters']['locale'] = 'en';
 }
 
 /**
  * Task handler to load our install profile and enhance the dependency information
  */
-function panopoly_core_install_load_profile(&$install_state) {
+function hot_core_install_load_profile(&$install_state) {
 
   // Loading the install profile normally
   install_load_profile($install_state);

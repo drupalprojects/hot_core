@@ -1,4 +1,4 @@
-; Panopoly Core Makefile
+; HotCore! Makefile
 
 api = 2
 core = 7.x
@@ -50,7 +50,7 @@ projects[token][subdir] = contrib
 projects[entity][version] = 1.5
 projects[entity][subdir] = contrib
 
-projects[libraries][version] = 2.2
+projects[libraries][version] = 2.1
 projects[libraries][subdir] = contrib
 
 ; Field modules
@@ -75,6 +75,7 @@ projects[apps][download][type] = git
 projects[apps][download][branch] = 7.x-1.x
 projects[apps][download][revision] = b9d82b7
 projects[apps][patch][1790902] = http://drupal.org/files/1790902.4-check-last-modified-existing.patch
+projects[apps][patch][2254327] = http://drupal.org/files/issues/apps_github-release-filename_2254327_1_0.patch
 
 projects[features][version] = 2.0
 projects[features][subdir] = contrib

@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * panopoly_core.views_default.inc
+ * hot_core.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function panopoly_core_views_default_views() {
+function hot_core_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'panopoly_taxonomy';
+  $view->name = 'hotsauce_taxonomy';
   $view->description = 'Administrative view to show news.';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Panopoly Taxonomy';
+  $view->human_name = 'hotsauce Taxonomy';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -55,7 +55,7 @@ function panopoly_core_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => 'panopoly_image_quarter',
+    'image_style' => 'hotsauce_image_quarter',
     'image_link' => 'content',
   );
   /* Field: Title */
@@ -72,7 +72,7 @@ function panopoly_core_views_default_views() {
   $handler->display->display_options['fields']['created']['ui_name'] = 'Date';
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'panopoly_day';
+  $handler->display->display_options['fields']['created']['date_format'] = 'hotsauce_day';
   /* Field: Author */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -161,7 +161,7 @@ function panopoly_core_views_default_views() {
       'label' => 'Taxonomy Term',
     ),
   );
-  $export['panopoly_taxonomy'] = $view;
+  $export['hotsauce_taxonomy'] = $view;
 
   return $export;
 }
