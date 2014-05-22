@@ -1,4 +1,4 @@
-HotCore!
+HotCoreeeee!
 =============
 This is the magical core of the HotSauce! framework. It helps to package the
 entire distribution and provides some generally useful features that other
